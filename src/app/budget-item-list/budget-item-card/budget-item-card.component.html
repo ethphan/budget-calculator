@@ -2,6 +2,7 @@
   <div
     class="budget-item"
     [ngClass]="{ income: item.amount >= 0, expense: item.amount < 0 }"
+    (click)="onCardClick()"
   >
     <div class="description">
       <p>{{ item.description }}</p>
