@@ -1,5 +1,5 @@
 <div class="root">
-  <div class="budget-item ">
+  <div class="budget-item" [ngClass]="{ 'income': isIncome, 'expense': !isIncome }">
     <div class="description">
       <p>test</p>
     </div>
@@ -8,4 +8,5 @@
       <p>100</p>
     </div>
   </div>
+  <div class="x-icon-button"></div>
 </div>
